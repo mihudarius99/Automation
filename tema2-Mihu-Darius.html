@@ -1,0 +1,66 @@
+<script>
+/* Creaza un fisier nou cu numele “tema2-NUMELE-TAU.html” in care sa adaugi urmatoarele:
+● doua variabile “a“ si “b“ de tip numeric care sa fie verificate cu o conditie (IF)
+○ verifica daca a>b atunci sa se afiseze ca "Numarul a este mai mare decat b.";
+○ daca a<b sa se afiseze "Nu este indeplinita conditia a>b.";
+● se da urmatorul array: masini=["bmw", "dacia", "mercedes", "lancia"]
+○ afiseaza in consola fiecare masina in felul urmator "Masina cu numarul 1 este
+bmw." apoi "Masina cu numarul 2 este dacia." si asa mai departe; atentie la
+afisare, masina de pe pozitia 0 trebuie sa apara in consola cu numarul 1,
+masina cu pozitia 1 trebuie sa apara in consola cu numarul 2… Adica
+numarul afisat in consola este +1 fata de pozitia din array.
+● o functie care primeste 2 parametrii numerici si afiseaza produsul lor in consola asa:
+"Produsul numerelor este X.";
+● o functie care primeste ca parametru un nume si sexul persoanei (in format string de
+genul m sau f) iar apoi afiseaza in consola "Salut domnule/doamna X." - domnule
+sau doarmna o sa fie afisat pe baza sexului */
+
+let a = 5;
+let b = 2;
+
+if(a > b){
+    console.log("Numarul a este mai mare decat b")
+}
+else{
+    console.log("Nu este indeplinita conditia a>b")
+}
+
+let masini = ["BMW", "Dacia", "Mercedes", "Lancia"];
+
+for(i=0; i<4; i++)
+{
+    console.log ("Masina cu nr " + (i+1) + " este " + masini[i] )
+}
+
+function parametrii(a, b){
+    console.log("Produsul numerelor este " + (a*b))
+
+}
+
+parametrii(3,10)
+
+
+function persoana (nume, sex){
+  
+    if(sex === "m"){
+        console.log("Salut domnul " + nume);
+    }
+        else{
+        console.log("Salut doamna " + nume);
+        }
+    }
+
+    persoana("Dariu", "m");
+    persoana("Cristina", "f");
+
+
+
+
+
+
+
+
+
+
+
+</script>

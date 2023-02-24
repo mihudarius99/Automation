@@ -1,0 +1,149 @@
+<script>
+
+let nume = 'Darius';  //tip de date : string
+let varsta = 30;      //tip de date: numeric
+let aiFacutArmata = true; //tip de date: bolean sau true/false
+
+
+const numeC = 'Alin';
+const varstaC = 31;
+const aiFacutArmataC = 0;
+
+//operatii
+varsta = varstaC / 2;  //operatii de baza - + / * %
+nume = nume + ' Popescu';
+aiFacutArmata = aiFacutArmata;
+
+
+
+let masini = ['Dacia', 'Audi', 'BMW', 2012];    //tip de date: array sau vector
+let votPresedinte = [2006, 2010, 2014];   //
+
+
+let masina = {
+
+    brand: 'Audi', 
+    model: 'A4',
+    anFabricatie: 2014,
+    inmatricula: true,
+    extraoptiuni: ['aer conditionat', 'servo-directie', 'geamuri electrice'],
+    nrInmatriculare: 'B47ABC',
+    garaj: {
+        suprafata: 16,
+        stradaGaraj: 'Ion Creanga',
+        ocupat: false
+    },
+    salut: function (){
+        //console.log("Salut sunt masina ta ");
+    }
+}
+
+masina.salut();
+
+ a = 3;
+ b = 2;
+ c = 5;
+if (a < b) {
+    //console.log("IF1 ");
+
+}
+else if(c < b)
+{
+    //console.log("IF2 ");
+}
+    else {
+
+    //console.log("ELSE ");
+
+}
+
+animale = ["pisica", "leu", "caprioara"];
+ 
+for(i=0; i<3; i++){
+   // console.log("Animal: " + animale[i]);
+
+}
+
+
+function impartire(a, b){
+    //console.log("Impartirea e =  " + a/b);
+}
+
+function datePersonale(nume, varsta, angajat){
+
+    let a;
+
+    if(angajat === true){
+        a = "angajat";
+    }
+    else{
+        a = "somer";
+
+    }
+    console.log(nume + " are varsta de " + varsta + " de ani si este " + a);
+
+}
+
+//datePersonale("Darius", 23, true);
+//datePersonale("Vlad", 29, false);
+
+function afisareMasini(x){
+
+    for (i=0; i<x.length ; i++){
+
+        console.log(x[i]);
+    }
+
+}
+
+afisareMasini(["BMW", "Audi", "Seat"]);
+afisareMasini(["BMW", "Audi", "Seat", "Dacia"]);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
